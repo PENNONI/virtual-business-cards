@@ -4,7 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Noah Thibodeaux — Business Card</title>
+<title>Mike Padula, PE | Pennoni Virtual Business Card</title>
+<meta name="description" content="Virtual business card for Mike Padula, PE, Regional Vice President at Pennoni, supporting geotechnical engineering and inspection and testing services.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -221,7 +222,7 @@
   }
   .foot .co{
     display:block;
-    width:min(204px,52vw);
+    width:min(190px,52vw);
     height:auto;
     margin-top:-18px;
     margin-bottom:-18px;
@@ -293,6 +294,58 @@
     font-size:10.5px;color:var(--muted);
   }
   .edu b{color:var(--ink);font-weight:600}
+  .front-chips{
+    margin-top:12px;
+    gap:5px;
+  }
+  .front-chips .chip{
+    font-size:8.7px;
+    padding:3px 7px;
+  }
+  .btn.linkedin-btn{
+    width:max-content;
+    margin-top:8px;
+    padding:5px 9px;
+    font-size:9.5px;
+    letter-spacing:.08em;
+    text-decoration:none;
+  }
+  .top .linkedin-btn{
+    margin-top:0;
+    padding:5px 8px;
+    font-size:9px;
+  }
+  .back-profile{
+    margin-top:13px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .back-bio{
+    font-size:12.4px;
+    line-height:1.45;
+    color:#d7dfd5;
+  }
+  .back-sections{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    padding-top:9px;
+    border-top:1px solid var(--line);
+  }
+  .back-section .lbl{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:8.7px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin-bottom:2px;
+  }
+  .back-section .val{
+    font-size:11.8px;
+    line-height:1.34;
+    color:#dce6da;
+  }
 
   /* ---------- Controls ---------- */
   .controls{display:flex;align-items:center;gap:14px}
@@ -374,12 +427,12 @@
     .scene{width:min(94vw,560px)}
     .card{
       aspect-ratio:auto;
-      min-height:286px;
+      min-height:320px;
     }
     .content{padding:22px 24px 20px 28px}
     .front .content{padding-bottom:34px}
     .back .content{padding:19px 22px 18px 28px}
-    .foot .co{width:min(182px,56vw);margin-top:-16px;margin-bottom:-16px}
+    .foot .co{width:min(172px,56vw);margin-top:-16px;margin-bottom:-16px}
     .top,.back-head{font-size:9.5px;letter-spacing:.16em}
     .rows{margin-top:10px;gap:7px}
     .row{gap:10px}
@@ -392,17 +445,29 @@
     .chips{gap:5px}
     .chip{font-size:8.5px;padding:3px 6px}
     .edu{font-size:9.5px;line-height:1.35;margin-top:8px;padding-bottom:2px}
+    .front-chips{gap:4px;margin-top:10px}
+    .front-chips .chip{font-size:7.8px;padding:3px 5px}
+    .linkedin-btn{font-size:8.5px;padding:5px 8px;margin-top:7px}
+    .top .linkedin-btn{font-size:8px;padding:4px 7px;margin-top:0}
+    .back-profile{margin-top:10px;gap:8px}
+    .back-bio{font-size:11.2px;line-height:1.38}
+    .back-sections{gap:6px;padding-top:8px}
+    .back-section .lbl{font-size:7.8px;letter-spacing:.14em}
+    .back-section .val{font-size:10.3px;line-height:1.28}
     .spec{grid-template-columns:1fr;gap:3px}
   }
 
   @media (max-width:360px){
-    .card{min-height:292px}
+    .card{min-height:342px}
     .content{padding:20px 22px 18px 26px}
     .front .content{padding-bottom:32px}
     .back .content{padding:18px 20px 17px 26px}
-    .foot .co{width:min(164px,56vw);margin-top:-14px;margin-bottom:-14px}
+    .foot .co{width:min(154px,56vw);margin-top:-14px;margin-bottom:-14px}
     .row .val{font-size:11px}
     .chip{font-size:8px;padding-inline:5px}
+    .front-chips .chip{font-size:7.3px;padding-inline:4px}
+    .back-bio{font-size:10.8px}
+    .back-section .val{font-size:10px}
   }
 
   @media print{
@@ -429,26 +494,32 @@
         <span class="mark m-bl"></span><span class="mark m-br"></span>
         <div class="content">
           <div class="top">
-            <span class="brand"><span class="dot"></span>Engineering · QA / QC</span>
-            <span>Spec&nbsp;Rev&nbsp;·&nbsp;2026</span>
+            <span class="brand"><span class="dot"></span>Geotechnical · I&amp;T</span>
+            <a class="btn linkedin-btn" href="https://www.linkedin.com/in/mike-padula-pe-65790586/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.3 8.5h3.27V21H3.3V8.5Zm5.36 0h3.13v1.71h.04c.44-.83 1.5-1.7 3.1-1.7 3.3 0 3.91 2.18 3.91 5V21h-3.26v-5.55c0-1.32-.02-3.02-1.84-3.02-1.84 0-2.13 1.44-2.13 2.92V21H8.66V8.5Z"/></svg>
+              LinkedIn
+            </a>
           </div>
 
           <div class="namewrap">
-            <div class="credline">Staff Engineer</div>
-            <h1 class="name"><span class="first">Noah</span><br><span class="last">Thibodeaux</span></h1>
-            <div class="badges">
-              <span class="badge accent">Ph.D.</span>
-              <span class="badge accent">EIT</span>
-              <span class="badge">Special Projects</span>
+            <div class="credline">Regional Vice President</div>
+            <h1 class="name"><span class="first">Mike</span><br><span class="last">Padula, PE</span></h1>
+            <div class="subtitle">Geotechnical Engineering · Inspection &amp; Testing Services</div>
+            <div class="chips front-chips">
+              <span class="chip">Professional Engineer</span>
+              <span class="chip">Regional Leadership</span>
+              <span class="chip">Geotechnical Engineering</span>
+              <span class="chip">Inspection &amp; Testing</span>
+              <span class="chip">Materials Engineering</span>
+              <span class="chip">Construction Services</span>
             </div>
           </div>
 
           <div class="foot">
             <div>
               <img class="co" src="../Logo.png" alt="Pennoni Associates">
-              <div class="tag">Inspections &amp; Testing · King of Prussia Lab</div>
             </div>
-            <div class="monogram">NT</div>
+            <div class="monogram">MP</div>
           </div>
         </div>
       </div>
@@ -459,39 +530,25 @@
         <span class="mark m-tl"></span><span class="mark m-tr"></span>
         <span class="mark m-bl"></span><span class="mark m-br"></span>
         <div class="content">
-          <div class="back-head"><span>Contact</span><span>NT · 01</span></div>
+          <div class="back-head"><span>Profile</span><span>MP · 01</span></div>
 
-          <div class="rows">
-            <div class="row">
-              <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-              </span>
-              <div><div class="lbl">Email</div><a class="val" href="mailto:nthibodeaux@pennoni.com" style="color:inherit;text-decoration:none">nthibodeaux@pennoni.com</a></div>
-            </div>
-            <div class="row">
-              <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3.3 8.5h3.27V21H3.3V8.5Zm5.36 0h3.13v1.71h.04c.44-.83 1.5-1.7 3.1-1.7 3.3 0 3.91 2.18 3.91 5V21h-3.26v-5.55c0-1.32-.02-3.02-1.84-3.02-1.84 0-2.13 1.44-2.13 2.92V21H8.66V8.5Z"/></svg>
-              </span>
-              <div><div class="lbl">LinkedIn</div><a class="val" href="https://www.linkedin.com/in/noah-thibodeaux-ph-d-eit-4b46801a9" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">/in/noah-thibodeaux-ph-d-eit</a></div>
-            </div>
-            <div class="row">
-              <span class="ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              </span>
-              <div><div class="lbl">Based in</div><span class="val">Hainesport, New Jersey</span></div>
-            </div>
-          </div>
+          <div class="back-profile">
+            <p class="back-bio">Mike leads Pennoni’s geotechnical engineering and inspection and testing services, bringing broad expertise across construction, materials engineering, materials testing, structural engineering, and geotechnical engineering.</p>
 
-          <div class="caps">
-            <div class="lbl">Capabilities</div>
-            <div class="chips">
-              <span class="chip">UHPC</span>
-              <span class="chip">SCC</span>
-              <span class="chip">Match Curing</span>
-              <span class="chip">ASTM C39 / C1583</span>
-              <span class="chip">Special Inspections</span>
+            <div class="back-sections">
+              <div class="back-section">
+                <div class="lbl">Leadership</div>
+                <div class="val">Geotechnical Engineering · Inspection &amp; Testing Services</div>
+              </div>
+              <div class="back-section">
+                <div class="lbl">Technical Expertise</div>
+                <div class="val">Construction · Materials Engineering · Materials Testing · Structural Engineering</div>
+              </div>
+              <div class="back-section">
+                <div class="lbl">Focus</div>
+                <div class="val">Quality · Technical Rigor · Service Evolution · Client Support</div>
+              </div>
             </div>
-            <div class="edu">Ph.D. — <b>New Jersey Institute of Technology</b></div>
           </div>
         </div>
       </div>
@@ -509,22 +566,18 @@
 
   <section class="dossier">
     <span class="edge"></span>
-    <div class="doss-head"><span class="l">Profile</span><span>Ref&nbsp;·&nbsp;NT-2026</span></div>
-    <div class="doss-role">Staff Engineer — Special Projects &amp; QA/QC</div>
-    <div class="doss-sub">Pennoni Associates · Inspections &amp; Testing — King of Prussia Laboratory</div>
+    <div class="doss-head"><span class="l">Profile</span><span>Ref&nbsp;·&nbsp;MP-2026</span></div>
+    <div class="doss-role">Regional Vice President</div>
+    <div class="doss-sub">Geotechnical Engineering · Inspection &amp; Testing Services</div>
 
     <div class="doss-body">
-      <p>Oversees <b>Special Projects and QA/QC</b> in Pennoni Associates' King of Prussia laboratory, leading technically demanding field and laboratory programs with a focus on <b>concrete durability</b> — where strong technical judgment, direct coordination, and defensible results are essential.</p>
-      <p>Plans and oversees complex testing efforts, resolves project-specific technical problems, and delivers reporting that serves clients, contractors, and internal teams with equal clarity. Builds <b>Python- and Excel-based tools</b> that improve how testing data is processed, visualized, and reported — driving consistency and traceability.</p>
-      <p>Also active in <b>business development and innovation</b>: strengthening client relationships, expanding service lines, and delivering greater operational efficiency.</p>
+      <p>Mike leads Pennoni’s geotechnical engineering and inspection and testing services, bringing broad expertise across construction, materials engineering, materials testing, structural engineering, and geotechnical engineering.</p>
     </div>
 
     <div class="specs">
-      <div class="spec"><span class="k">Focus</span><span class="v">Concrete durability · complex field &amp; laboratory testing programs · defensible, traceable results</span></div>
-      <div class="spec"><span class="k">Methods</span><span class="v"><span class="mono">UHPC · SCC · Match Curing · ASTM C39 / C1583 / C1611 / C1074</span></span></div>
-      <div class="spec"><span class="k">Data Tooling</span><span class="v">Python &amp; Excel — data processing, visualization &amp; automated, traceable reporting</span></div>
-      <div class="spec"><span class="k">Business Dev</span><span class="v">Client relationships · service-line expansion · operational efficiency</span></div>
-      <div class="spec"><span class="k">Education</span><span class="v">Ph.D., New Jersey Institute of Technology · Engineer-in-Training (EIT)</span></div>
+      <div class="spec"><span class="k">Leadership</span><span class="v">Geotechnical Engineering · Inspection &amp; Testing Services</span></div>
+      <div class="spec"><span class="k">Technical Expertise</span><span class="v">Construction · Materials Engineering · Materials Testing · Structural Engineering</span></div>
+      <div class="spec"><span class="k">Focus</span><span class="v">Quality · Technical Rigor · Service Evolution · Client Support</span></div>
     </div>
   </section>
 
