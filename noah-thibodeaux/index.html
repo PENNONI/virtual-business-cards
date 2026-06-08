@@ -138,6 +138,7 @@
     display:flex;
     flex-direction:column;
   }
+  .front .content{padding-bottom:38px}
 
   /* ---------- Front ---------- */
   .top{
@@ -212,7 +213,7 @@
 
   .foot{
     margin-top:auto;
-    padding-top:14px;
+    padding-top:10px;
     display:flex;
     align-items:flex-end;
     justify-content:space-between;
@@ -220,14 +221,17 @@
   }
   .foot .co{
     display:block;
-    width:min(210px,54vw);
+    width:min(204px,52vw);
     height:auto;
+    margin-top:-18px;
+    margin-bottom:-18px;
+    transform:translateY(-6px);
     filter:drop-shadow(0 0 10px rgba(2,177,124,.18));
   }
   .foot .tag{
     font-family:"IBM Plex Mono",monospace;
     font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--faint);margin-top:3px;
+    color:var(--faint);margin-top:2px;line-height:1.25;
   }
   .monogram{
     font-family:"Archivo",sans-serif;
@@ -373,8 +377,9 @@
       min-height:286px;
     }
     .content{padding:22px 24px 20px 28px}
+    .front .content{padding-bottom:34px}
     .back .content{padding:19px 22px 18px 28px}
-    .foot .co{width:min(190px,58vw)}
+    .foot .co{width:min(182px,56vw);margin-top:-16px;margin-bottom:-16px}
     .top,.back-head{font-size:9.5px;letter-spacing:.16em}
     .rows{margin-top:10px;gap:7px}
     .row{gap:10px}
@@ -393,8 +398,9 @@
   @media (max-width:360px){
     .card{min-height:292px}
     .content{padding:20px 22px 18px 26px}
+    .front .content{padding-bottom:32px}
     .back .content{padding:18px 20px 17px 26px}
-    .foot .co{width:min(170px,58vw)}
+    .foot .co{width:min(164px,56vw);margin-top:-14px;margin-bottom:-14px}
     .row .val{font-size:11px}
     .chip{font-size:8px;padding-inline:5px}
   }
